@@ -13,10 +13,10 @@ let interval;
 
 // Start Function Cronômetro
 function start() {
-    if (SecondsCache >= 60) {
+    if (SecondsCache >= 59) {
         SecondsCache = 0;
         MinuteCache += 1;
-    } else if (MinuteCache >= 60) {
+    } else if (MinuteCache >= 59) {
         MinuteCache = 0;
         HourCache += 1;
     }
@@ -34,7 +34,23 @@ btn.addEventListener('click', function() {
     }
 })
 
-// Reload Page Function
-function ReloadPage() {
-    location.reload()
+// Reset Cronômetro Function
+function reset() {
+    clearInterval(interval);
+    interval = null;
+    SecondsCache = 0;
+    MinuteCache = 0;
+    HourCache = 0;
+    timer.innerHTML = '00:00:00';
+}
+
+// Stop Cronômetro Function
+function stop() {
+    clearInterval(interval); // Limpa o intervalo
+    interval = null;
+}
+
+if (stop) {
+    let stop = document.getElementById('stop');
+    stop.addEventListener('click', stop);
 }

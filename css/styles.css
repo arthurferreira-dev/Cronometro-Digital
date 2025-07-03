@@ -96,3 +96,15 @@ button#reload:hover {
     background-color: #c46420;
     border: 1px solid #c46420;
 }
+
+button#stop {
+    background-color: #e71616;
+    border: 1px solid #e71616;
+    color: #fff;
+    margin-top: 12px;
+}
+
+button#stop:hover {
+    background-color: #d61313;
+    border: 1px solid #d61313;
+}
