@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/*
+    CSS Archive by: @arthurferreira-dev
+    LICENSE: MIT License
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* Montserrat by: Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sunuwar&display=swap'); /* Noto Sans Sunuwar by: Google Fonts */
 
@@ -41,7 +46,7 @@ main {
     background-color: #fff;
 }
 
-section#timer > h2#timer {
+section#timer > h2#timers {
     font-family: var(--sunuwar-sans);
     text-align: center;
     border: 1px solid #000;
@@ -65,6 +70,7 @@ button {
     font-size: 0.9em;
     border: 1px solid #000;
     border-radius: 6.5px;
+    transition-duration: .40s;
 }
 
 button#start {
@@ -72,4 +78,21 @@ button#start {
     border: 1px solid #6d29ec;
     color: #fff;
     margin-top: 12px;
+}
+
+button#start:hover {
+    background-color: #6726df;
+    border: 1px solid #6726df;
+}
+
+button#reload {
+    background-color: #da7025;
+    border: 1px solid #da7025;
+    color: #fff;
+    margin-top: 12px;
+}
+
+button#reload:hover {
+    background-color: #c46420;
+    border: 1px solid #c46420;
 }
